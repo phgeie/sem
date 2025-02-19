@@ -44,17 +44,24 @@
 
 \begin{frame}{Idee}
 	\begin{itemize}
+		\item Feeback Arc Set Problem (FAS) ist ähnlich zum Spiel mit unbegrenzter Höhe
 		\item Konstruktion des Spiels (SCBT) als Graphen 
-		\item Reduktion des Problems auf das Feeback Arc Set Problem (FAS)
+		\item Reduktion des Problems auf FAS
 		\item FAS ist NP-vollständig, somit auch SCBT
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Definitionen}
+	\begin{itemize}
+		\item Menge an Farben $C=\{1,\dots c\}$ mit festem $c\in \mathbb{N}$
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{Related Work}
 	\begin{itemize}
-		\item Konstruktion des Spiels (SCBT) als Graphen 
-		\item Reduktion des Problems auf das Feeback Arc Set Problem (FAS)
-		\item FAS ist NP-vollständig, somit auch SCBT
+		\item Sortieren von farbigen Bällen in farblosen Tuben. Bälle nur auf Bälle gleicher Farbe oder in leere Tuben (Reduktion von 3-Partition)
+		\item $k$ $i$-farbige Bälle in umgekehrter Reihenfolge. Nur adjazente Bälle können getauscht werden 
+		\item Reales Problem: Container in Terminalen, um Effizienz im Lagerplatz zu steigern, unproduktive Züge beim Stapeln zu vermeiden und sich an Planungseinschränkungen zu halten 
 	\end{itemize}
 \end{frame}
 
