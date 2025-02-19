@@ -1,3 +1,4 @@
+
 \documentclass{beamer}
 
 \mode<presentation>{\usetheme{Madrid}}
@@ -17,6 +18,12 @@
 \institute[Universität Trier]{}
 \date{}
 \beamertemplatenavigationsymbolsempty
+
+\usepackage{enumitem}
+\newlist{arrowlist}{itemize}{1}
+\setlist[arrowlist]{label=$\Rightarrow$}
+\newlist{pointlist}{itemize}{1}
+\setlist[pointlist]{label=$\circ$}
 
 %—-------------------------------------------------------------
 
@@ -43,26 +50,78 @@
 \end{frame}
 
 \begin{frame}{Idee}
-	\begin{itemize}
-		\item Feeback Arc Set Problem (FAS) ist ähnlich zum Spiel mit unbegrenzter Höhe
+	\begin{pointlist}
+		\item Feedback Arc Set Problem (FAS) ist ähnlich zum Spiel mit unbegrenzter Höhe
 		\item Konstruktion des Spiels (SCBT) als Graphen 
 		\item Reduktion des Problems auf FAS
 		\item FAS ist NP-vollständig, somit auch SCBT
-	\end{itemize}
+	\end{pointlist}
 \end{frame}
 
 \begin{frame}{Definitionen}
-	\begin{itemize}
+	\begin{pointlist}
 		\item Menge an Farben $C=\{1,\dots c\}$ mit festem $c\in \mathbb{N}$
-	\end{itemize}
+		\item $c+1$ Tuben der Höhe $h_i\in\mathbb{N}$ in den Farben und eine farblos
+		\item Bis zu $h_i$ Bälle pro Farbe
+		\item Konfiguration $S$ einer Tube ist eine Sequenz $(b_1,\dots,b_l)$ mit $l\leq h$
+		\item Tube-Rack $(T_0, T_1,\dots,T_c)$ hat Höhenprofil $H=(h_0,\dots,h_c)$ und Ersatztube $T_0$
+		\end{pointlist}
+		\end{frame}
+\begin{frame}{Definitionen}
+	\begin{pointlist}
+		\item Konfiguration eines Tube-Racks ist $S=(S_0,\dots,S_c)$ mit $|S_i| \leq h_i$
+		\item Zug $(i,j)$ heißt valide, falls $|S_i|\geq 1$ und $|S_j| < h_j$
+		\item Finale Konfiguration ist $S=(S_0,\dots, S_0)$ mit $S_0 = ()$ und $S_i =(i,\dots,i)$ für $1\leq i \leq c$
+		\item $i$-farbiger Ball ist in finaler Position, falls er in Tube $i$ ist und alle Bälle darunter Farbe $i$ haben
+	\end{pointlist}
+\end{frame}
+
+\begin{frame}{Probleme}
+	\begin{pointlist}
+		\item SCBT-Problem:
+		\begin{arrowlist}
+ 			\item Instanz $(H,S,k)$ mit $k$ validen Zügen
+		\end{arrowlist}
+		\item Restricted SCBT-Problem (RSCBT):
+		\begin{arrowlist}
+ 			\item Anzahl Bälle der Farbe $i$ gleich der Höhe $h\in\mathbb{N}$ mit dem Höhenprofil $H=(h,\dots,h)$
+		\end{arrowlist}
+	\end{pointlist}
+\end{frame}
+
+\begin{frame}{Lemma 1}
+\end{frame}
+
+\begin{frame}{FAS}
+\end{frame}
+
+\begin{frame}{Lemma 2}
+\end{frame}
+
+\begin{frame}{Beweis (Hinrichtung)}
+\end{frame}
+
+\begin{frame}{Beweis (Rückrichtung)}
+\end{frame}
+
+\begin{frame}{Beweis (Rückrichtung)}
+\end{frame}
+
+\begin{frame}{Definition DFVS}
+\end{frame}
+
+\begin{frame}{Lower Bounds}
+\end{frame}
+
+\begin{frame}{Algorithmus}
 \end{frame}
 
 \begin{frame}{Related Work}
-	\begin{itemize}
+	\begin{pointlist}
 		\item Sortieren von farbigen Bällen in farblosen Tuben. Bälle nur auf Bälle gleicher Farbe oder in leere Tuben (Reduktion von 3-Partition)
 		\item $k$ $i$-farbige Bälle in umgekehrter Reihenfolge. Nur adjazente Bälle können getauscht werden 
 		\item Reales Problem: Container in Terminalen, um Effizienz im Lagerplatz zu steigern, unproduktive Züge beim Stapeln zu vermeiden und sich an Planungseinschränkungen zu halten 
-	\end{itemize}
+	\end{pointlist}
 \end{frame}
 
 
