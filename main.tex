@@ -9,6 +9,8 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{tikz}
+\usetikzlibrary {automata}
+\usepackage{stmaryrd}
 
 \usepackage{subcaption}
 
@@ -107,29 +109,145 @@
 \begin{pointlist}
 \item geg.: gerichteter Multigraph G=(V,E) und $k\in\mathbb{N}_0$
 \item ges.: $\exists E' \subseteq E$ mit $|E'|\leq k$, sodass $G'(V,E\backslash E')$ azyklisch ist
-\end{pointlist}
-\vspace*{1cm}
 \begin{arrowlist}
 \item Nach Karp (1972) NP-vollständig
 \end{arrowlist}
+\end{pointlist}
 \end{frame}
 
 \begin{frame}{Konstruktion}
 \begin{pointlist}
-\item $V=\{1,\dots,n\}$ und $G$ azyklischqazre  
+\item $V=\{1,\dots,n\}$ und $G$ azyklisch mit $c=n$
+\begin{arrowlist}
+\item Eine Tube $S_u$ für jeden Knoten $u\in V$
+\item Ein Ball der Farbe $u$ in Tube $v$ Für jede Kante $(u,v)\in E$
+\item konstruierte Instanz $((\infty, \dots, \infty), (S_u)_{u=1}^n, |E|+k)$
+\end{arrowlist}
 \end{pointlist}
 \end{frame}
 
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct01}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct02}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct03}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct04}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct05}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct06}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct07}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct08}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct09}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct10}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
 \begin{frame}{Lemma 2}
+\begin{pointlist}
+\item Instanz $(G,k)$ von FAS hat genau dann eine Lösung, wenn die konstruierte Instanz $((\infty, \dots, \infty), (S_u)_{u=1}^n, |E|+k)$ von SCBT eine Lösung hat
+\begin{arrowlist}
+\item SCBT ist auch NP-vollständig
+\end{arrowlist}
+\end{pointlist}
 \end{frame}
 
-\begin{frame}{Beweis (Hinrichtung)}
+\begin{frame}{Beweis (\glqq $\Rightarrow$\grqq)}
+\begin{pointlist}
+\item geg.: $(G,k)$ mit $G=(V,E)$
+\item Sei $E'\subseteq E$ mit $|E'| \leq k$ eine Lösung für FAS
+\item Sei $\pi:\{1,\dots,n\}\rightarrow \{1,\dots,n\}$ eine topologische Sortierung von $G'=(V, E\backslash E')$, sodass $\forall (u,v)\in E\backslash E': \pi(u)\leq \pi(v)$ 
+\item Für $i=1,\dots,n$:
+\begin{arrowlist}
+\item Bälle in $S_{\pi(i)}$, die einer Kante $(\pi(i),u)\in E\backslash E'$ entsprechen, gehen in Tube $S_u$
+\item Bälle in $S_{\pi(i)}$, die einer Kante aus $E'$ entsprechen, gehen in die Reserve-Tube 
+\end{arrowlist}
+\item Durch die topologische Sortierung ist die Tube $S_u$ die finale für den jeweiligen Ball, daher $k_1 = |E\backslash E'|$ viele Züge
+\item Die Bälle in der Reserve-Tube werden schließlich auf ihre Farben aufgeteilt, , daher $k_2 = 2\cdot |E'|$ viele Züge
+\item $k_1 + k_2 =  |E\backslash E'| + 2\cdot |E'| = |E| + |E'| \leq |E| + k$
+\item Konstruierte Instanz $((\infty, \dots, \infty), (S_u)_{u=1}^n, |E|+k)$ hat eine Lösung
+\end{pointlist}
 \end{frame}
 
-\begin{frame}{Beweis (Rückrichtung)}
+\begin{frame}{Beweis (\glqq $\Leftarrow$\grqq)}
+\begin{pointlist}
+\item geg.: Konstruierte Instanz kann in $|E|+k$ Zügen gelöst werden
+\item Lemma 1. besagt, dass jeder Ball entweder einmal final bewegt wird oder zuerst in die Reserve-Tube geht
+\item Sei $E'$ die Menge mit Bällen, die 2-mal bewegt werden
+\item Jeder Ball muss mindestens 1-mal bewegt werden, somit $|E|$
+\item Jeder zusätzlicher Zug fällt unter $k$, daher $|E'|\leq k$
+\end{pointlist}
 \end{frame}
 
-\begin{frame}{Beweis (Rückrichtung)}
+\begin{frame}{Beweis (\glqq $\Leftarrow$\grqq)}
+\begin{pointlist}
+\item Annahme: $G'=(V,E\backslash E')$ hat einen Zyklus
+\item Ball für Kante $(u,v)\in E\backslash E'$ kann erst final bewegt werden, wenn alle Bälle in Zielröhre $S_u$ entfernt wurden
+\item Der Ball kann nur bewegt werden, wenn ein anderer im Zyklus bewegt werden kann $\lightning$ 
+\begin{arrowlist}
+\item $G'=(V,E\backslash E')$ ist azyklisch 
+\end{arrowlist}
+\end{pointlist}
 \end{frame}
 
 \begin{frame}{Definition DFVS}
@@ -144,9 +262,27 @@
 \begin{frame}{Related Work}
 	\begin{pointlist}
 		\item Sortieren von farbigen Bällen in farblosen Tuben. Bälle nur auf Bälle gleicher Farbe oder in leere Tuben (Reduktion von 3-Partition)
-		\item $k$ $i$-farbige Bälle in umgekehrter Reihenfolge. Nur adjazente Bälle können getauscht werden 
-		\item Reales Problem: Container in Terminalen, um Effizienz im Lagerplatz zu steigern, unproduktive Züge beim Stapeln zu vermeiden und sich an Planungseinschränkungen zu halten 
 	\end{pointlist}
+\end{frame}
+
+\begin{frame}{Related Work}
+	\begin{pointlist}
+		\item $k$ $i$-farbige Bälle in umgekehrter Reihenfolge. Nur adjazente Bälle können getauscht werden 
+	\end{pointlist}
+	\begin{figure}[ht]
+		\includegraphics[width=.65\textwidth]{relatedwork}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Related Work}
+	\begin{pointlist}
+		\item Reales Problem: Container in Terminalen
+	\end{pointlist}
+	\begin{figure}[ht]
+		\includegraphics[width=.65\textwidth]{container}
+		\caption{Container Terminal}
+    \end{figure}
 \end{frame}
 
 
