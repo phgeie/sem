@@ -47,8 +47,8 @@
 	
 %—------------------------------------------------------
 
-
-\begin{frame}{Ziel: Kleinste Anzahl an Zügen}
+\section*{Idee}
+\begin{frame}{Idee}
 	\begin{figure}[ht]
 		\includegraphics[width=\textwidth]{maus}
     \end{figure}
@@ -63,6 +63,34 @@
 	\end{pointlist}
 \end{frame}
 
+\section*{Related Work}
+\begin{frame}{Related Work}
+	\begin{pointlist}
+		\item Sortieren von farbigen Bällen in farblosen Tuben. Bälle nur auf Bälle gleicher Farbe oder in leere Tuben (Reduktion von 3-Partition)
+	\end{pointlist}
+\end{frame}
+
+\begin{frame}{Related Work}
+	\begin{pointlist}
+		\item $k$ $i$-farbige Bälle in umgekehrter Reihenfolge. Nur adjazente Bälle können getauscht werden 
+	\end{pointlist}
+	\begin{figure}[ht]
+		\includegraphics[width=.65\textwidth]{relatedwork}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Related Work}
+	\begin{pointlist}
+		\item Reales Problem: Container in Terminalen
+	\end{pointlist}
+	\begin{figure}[ht]
+		\includegraphics[width=.65\textwidth]{container}
+		\caption{Container Terminal}
+    \end{figure}
+\end{frame}
+
+\section*{Definition}
 \begin{frame}{Definitionen}
 	\begin{pointlist}
 		\item Menge an Farben $C=\{1,\dots c\}$ mit festem $c\in \mathbb{N}$
@@ -111,6 +139,7 @@
 	\end{pointlist}
 \end{frame}
 
+\section*{Lemma 1}
 \begin{frame}{Lemma 1}
 \begin{enumlist}
 \item Falls die Anzahl der $i$-farbigen Bälle $h$ entspricht für alle $1 \leq i \leq c$, hat $((h,\dots,h),S,c\cdot h\cdot (2h+1))$ eine Lösung, 
@@ -123,6 +152,7 @@
 \end{enumlist}
 \end{frame}
 
+\section*{FAS}
 \begin{frame}{Feedback Arc Set (FAS)}
 \begin{pointlist}
 \item geg.: gerichteter Multigraph G=(V,E) und $k\in\mathbb{N}_0$
@@ -133,6 +163,7 @@
 \end{pointlist}
 \end{frame}
 
+\section*{Konstruktion}
 \begin{frame}{Konstruktion}
 \begin{pointlist}
 \item $V=\{1,\dots,n\}$ und $G$ azyklisch mit $c=n$
@@ -221,6 +252,7 @@
     \end{figure}
 \end{frame}
 
+\section*{Lemma 2}
 \begin{frame}{Lemma 2}
 \begin{pointlist}
 \item Instanz $(G,k)$ von FAS hat genau dann eine Lösung, wenn die konstruierte Instanz $((\infty, \dots, \infty), (S_u)_{u=1}^n, |E|+k)$ von SCBT eine Lösung hat
@@ -384,42 +416,51 @@
 \end{figure}
 \end{frame}
 
-\begin{frame}{Definition DFVS}
+\section*{DFVS}
+\begin{frame}{Directed Feedback Vertex Set (DFVS)}
+\begin{pointlist}
+\item geg.: gerichteter Graph G=(V,E) und Integer $k$
+\item ges.: $\exists V' \subseteq V$ mit $|V'|\leq k$, sodass $G'[V\backslash V']$ azyklisch ist
+\begin{arrowlist}
+\item NP-vollständig
+\end{arrowlist}
+\end{pointlist}
 \end{frame}
 
+\section*{Lower Bounds}
 \begin{frame}{Lower Bounds}
+\begin{pointlist}
+\item Untere Schranke kann berechnet werden, da das Hinzufügen von Einschränkungen die Anzahl an Zügen nicht verringern kann
+\item FAS-Instanz wird auf eine DFVS-Instanz reduziert
+\item Diese Instanz wird mit für kleinere $k$ mit einem $DFVS$-Solver gelöst
+\item Untere Schranke wird experimentell berechnet
+\end{pointlist}
 \end{frame}
 
+
+\section*{Algo}
 \begin{frame}{Algorithmus}
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{algo}
+\end{figure}
 \end{frame}
 
-\begin{frame}{Related Work}
-	\begin{pointlist}
-		\item Sortieren von farbigen Bällen in farblosen Tuben. Bälle nur auf Bälle gleicher Farbe oder in leere Tuben (Reduktion von 3-Partition)
-	\end{pointlist}
-\end{frame}
-
-\begin{frame}{Related Work}
-	\begin{pointlist}
-		\item $k$ $i$-farbige Bälle in umgekehrter Reihenfolge. Nur adjazente Bälle können getauscht werden 
-	\end{pointlist}
-	\begin{figure}[ht]
-		\includegraphics[width=.65\textwidth]{relatedwork}
-		\caption{Konstruktion}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Related Work}
-	\begin{pointlist}
-		\item Reales Problem: Container in Terminalen
-	\end{pointlist}
-	\begin{figure}[ht]
-		\includegraphics[width=.65\textwidth]{container}
-		\caption{Container Terminal}
-    \end{figure}
+\section*{Experiment}
+\begin{frame}{Experimente}
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{topexp}
+\end{figure}
 \end{frame}
 
 
+\begin{frame}{Experimente}
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{botexp}
+\end{figure}
+\end{frame}
 
 \begin{frame}{}
   \centering \Huge

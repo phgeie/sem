@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.12.4)  24 FEB 2025 04:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.12.4)  24 FEB 2025 04:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1183,7 +1183,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
  (main.nav)
-<unitrier.jpg, id=26, 1146.684pt x 765.5802pt>
+<unitrier.jpg, id=70, 1146.684pt x 765.5802pt>
 File: unitrier.jpg Graphic file (type jpg)
 <use unitrier.jpg>
 Package pdftex.def Info: unitrier.jpg  used on input line 40.
@@ -1192,7 +1192,7 @@ Package pdftex.def Info: unitrier.jpg  used on input line 40.
 
 {C:/Users/pggei/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./unitrier.j
 pg>]
-<maus.jpg, id=38, 385.44pt x 216.81pt>
+<maus.jpg, id=82, 385.44pt x 216.81pt>
 File: maus.jpg Graphic file (type jpg)
 <use maus.jpg>
 Package pdftex.def Info: maus.jpg  used on input line 55.
@@ -1225,277 +1225,308 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 ) [3
 
+] [4
+
 ]
-<def0.png, id=55, 919.18407pt x 460.72125pt>
+<relatedwork.png, id=106, 197.23688pt x 149.8097pt>
+File: relatedwork.png Graphic file (type png)
+<use relatedwork.png>
+Package pdftex.def Info: relatedwork.png  used on input line 81.
+(pdftex.def)             Requested size: 222.48985pt x 168.99036pt.
+
+Overfull \vbox (4.24895pt too high) detected at line 81
+ []
+
+[5
+
+ <./relatedwork.png>]
+<container.jpg, id=117, 3777.11125pt x 2518.40875pt>
+File: container.jpg Graphic file (type jpg)
+<use container.jpg>
+Package pdftex.def Info: container.jpg  used on input line 91.
+(pdftex.def)             Requested size: 222.48985pt x 148.3312pt.
+ [6
+
+ <./container.jpg>]
+<def0.png, id=125, 919.18407pt x 460.72125pt>
 File: def0.png Graphic file (type png)
 <use def0.png>
-Package pdftex.def Info: def0.png  used on input line 76.
+Package pdftex.def Info: def0.png  used on input line 104.
 (pdftex.def)             Requested size: 222.48985pt x 111.51738pt.
- [4
+ [7
 
  <./def0.png>]
-<def.png, id=69, 919.18407pt x 460.72125pt>
+<def.png, id=138, 919.18407pt x 460.72125pt>
 File: def.png Graphic file (type png)
 <use def.png>
-Package pdftex.def Info: def.png  used on input line 89.
+Package pdftex.def Info: def.png  used on input line 117.
 (pdftex.def)             Requested size: 222.48985pt x 111.51738pt.
- [5
+ [8
 
- <./def.png>] [6
-
-] [7
-
-] [8
-
-] [9
+ <./def.png>]
+[9
 
 ] [10
 
+] [11
+
+] [12
+
+] [13
+
 ]
-<construct10.png, id=115, 983.17313pt x 319.94531pt>
+<construct10.png, id=184, 983.17313pt x 319.94531pt>
 File: construct10.png Graphic file (type png)
 <use construct10.png>
-Package pdftex.def Info: construct10.png  used on input line 152.
-(pdftex.def)             Requested size: 342.2953pt x 111.38693pt.
- [11
-
- <./construct10.png>]
-<construct09.png, id=124, 983.17313pt x 319.94531pt>
-File: construct09.png Graphic file (type png)
-<use construct09.png>
-Package pdftex.def Info: construct09.png  used on input line 159.
-(pdftex.def)             Requested size: 342.2953pt x 111.38693pt.
- [12
-
- <./construct09.png>]
-<construct08.png, id=133, 983.17313pt x 319.94531pt>
-File: construct08.png Graphic file (type png)
-<use construct08.png>
-Package pdftex.def Info: construct08.png  used on input line 166.
-(pdftex.def)             Requested size: 342.2953pt x 111.38693pt.
- [13
-
- <./construct08.png>]
-<construct07.png, id=143, 983.17313pt x 319.94531pt>
-File: construct07.png Graphic file (type png)
-<use construct07.png>
-Package pdftex.def Info: construct07.png  used on input line 173.
+Package pdftex.def Info: construct10.png  used on input line 183.
 (pdftex.def)             Requested size: 342.2953pt x 111.38693pt.
  [14
 
- <./construct07.png>]
-<construct06.png, id=152, 983.17313pt x 319.94531pt>
-File: construct06.png Graphic file (type png)
-<use construct06.png>
-Package pdftex.def Info: construct06.png  used on input line 180.
+ <./construct10.png>]
+<construct09.png, id=193, 983.17313pt x 319.94531pt>
+File: construct09.png Graphic file (type png)
+<use construct09.png>
+Package pdftex.def Info: construct09.png  used on input line 190.
 (pdftex.def)             Requested size: 342.2953pt x 111.38693pt.
  [15
 
- <./construct06.png>]
-<construct05.png, id=161, 983.17313pt x 319.94531pt>
-File: construct05.png Graphic file (type png)
-<use construct05.png>
-Package pdftex.def Info: construct05.png  used on input line 187.
+ <./construct09.png>]
+<construct08.png, id=202, 983.17313pt x 319.94531pt>
+File: construct08.png Graphic file (type png)
+<use construct08.png>
+Package pdftex.def Info: construct08.png  used on input line 197.
 (pdftex.def)             Requested size: 342.2953pt x 111.38693pt.
- [16
 
- <./construct05.png>]
-<construct04.png, id=170, 983.17313pt x 319.94531pt>
-File: construct04.png Graphic file (type png)
-<use construct04.png>
-Package pdftex.def Info: construct04.png  used on input line 194.
+[16
+
+ <./construct08.png>]
+<construct07.png, id=211, 983.17313pt x 319.94531pt>
+File: construct07.png Graphic file (type png)
+<use construct07.png>
+Package pdftex.def Info: construct07.png  used on input line 204.
 (pdftex.def)             Requested size: 342.2953pt x 111.38693pt.
  [17
 
- <./construct04.png>]
-<construct03.png, id=179, 983.17313pt x 319.94531pt>
-File: construct03.png Graphic file (type png)
-<use construct03.png>
-Package pdftex.def Info: construct03.png  used on input line 201.
+ <./construct07.png>]
+<construct06.png, id=220, 983.17313pt x 319.94531pt>
+File: construct06.png Graphic file (type png)
+<use construct06.png>
+Package pdftex.def Info: construct06.png  used on input line 211.
 (pdftex.def)             Requested size: 342.2953pt x 111.38693pt.
  [18
 
- <./construct03.png>]
-<construct02.png, id=188, 983.17313pt x 319.94531pt>
-File: construct02.png Graphic file (type png)
-<use construct02.png>
-Package pdftex.def Info: construct02.png  used on input line 208.
+ <./construct06.png>]
+<construct05.png, id=229, 983.17313pt x 319.94531pt>
+File: construct05.png Graphic file (type png)
+<use construct05.png>
+Package pdftex.def Info: construct05.png  used on input line 218.
 (pdftex.def)             Requested size: 342.2953pt x 111.38693pt.
- [19
 
- <./construct02.png>]
-<construct01.png, id=198, 983.17313pt x 319.94531pt>
-File: construct01.png Graphic file (type png)
-<use construct01.png>
-Package pdftex.def Info: construct01.png  used on input line 215.
+[19
+
+ <./construct05.png>]
+<construct04.png, id=239, 983.17313pt x 319.94531pt>
+File: construct04.png Graphic file (type png)
+<use construct04.png>
+Package pdftex.def Info: construct04.png  used on input line 225.
 (pdftex.def)             Requested size: 342.2953pt x 111.38693pt.
  [20
 
- <./construct01.png>]
-<construct.png, id=207, 983.17313pt x 319.94531pt>
-File: construct.png Graphic file (type png)
-<use construct.png>
-Package pdftex.def Info: construct.png  used on input line 222.
+ <./construct04.png>]
+<construct03.png, id=248, 983.17313pt x 319.94531pt>
+File: construct03.png Graphic file (type png)
+<use construct03.png>
+Package pdftex.def Info: construct03.png  used on input line 232.
 (pdftex.def)             Requested size: 342.2953pt x 111.38693pt.
  [21
 
- <./construct.png>] [22
+ <./construct03.png>]
+<construct02.png, id=257, 983.17313pt x 319.94531pt>
+File: construct02.png Graphic file (type png)
+<use construct02.png>
+Package pdftex.def Info: construct02.png  used on input line 239.
+(pdftex.def)             Requested size: 342.2953pt x 111.38693pt.
 
-]
-<graph.png, id=223, 776.9025pt x 487.8225pt>
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 242.
-(pdftex.def)             Requested size: 256.72147pt x 161.19778pt.
+[22
+
+ <./construct02.png>]
+<construct01.png, id=266, 983.17313pt x 319.94531pt>
+File: construct01.png Graphic file (type png)
+<use construct01.png>
+Package pdftex.def Info: construct01.png  used on input line 246.
+(pdftex.def)             Requested size: 342.2953pt x 111.38693pt.
  [23
 
+ <./construct01.png>]
+<construct.png, id=275, 983.17313pt x 319.94531pt>
+File: construct.png Graphic file (type png)
+<use construct.png>
+Package pdftex.def Info: construct.png  used on input line 253.
+(pdftex.def)             Requested size: 342.2953pt x 111.38693pt.
+ [24
+
+ <./construct.png>]
+[25
+
+]
+<graph.png, id=292, 776.9025pt x 487.8225pt>
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 274.
+(pdftex.def)             Requested size: 256.72147pt x 161.19778pt.
+ [26
+
  <./graph.png>]
-<graphe.png, id=232, 776.9025pt x 487.8225pt>
+<graphe.png, id=301, 776.9025pt x 487.8225pt>
 File: graphe.png Graphic file (type png)
 <use graphe.png>
-Package pdftex.def Info: graphe.png  used on input line 252.
+Package pdftex.def Info: graphe.png  used on input line 284.
 (pdftex.def)             Requested size: 256.72147pt x 161.19778pt.
- [24
+ [27
 
  <./graphe.png>]
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 263.
+Package pdftex.def Info: graph.png  used on input line 295.
 (pdftex.def)             Requested size: 164.30028pt x 103.16032pt.
-<constgraph.png, id=241, 669.2503pt x 408.02437pt>
+<constgraph.png, id=310, 669.2503pt x 408.02437pt>
 File: constgraph.png Graphic file (type png)
 <use constgraph.png>
-Package pdftex.def Info: constgraph.png  used on input line 263.
+Package pdftex.def Info: constgraph.png  used on input line 295.
 (pdftex.def)             Requested size: 164.30028pt x 100.16919pt.
- [25
+ [28
 
  <./constgraph.png>]
 File: graphe.png Graphic file (type png)
 <use graphe.png>
-Package pdftex.def Info: graphe.png  used on input line 274.
+Package pdftex.def Info: graphe.png  used on input line 306.
 (pdftex.def)             Requested size: 164.30028pt x 103.16032pt.
-<constgraph2.png, id=252, 669.2503pt x 408.02437pt>
+<constgraph2.png, id=320, 669.2503pt x 408.02437pt>
 File: constgraph2.png Graphic file (type png)
 <use constgraph2.png>
-Package pdftex.def Info: constgraph2.png  used on input line 274.
+Package pdftex.def Info: constgraph2.png  used on input line 306.
 (pdftex.def)             Requested size: 164.30028pt x 100.16919pt.
- [26
+ [29
 
  <./constgraph2.png>]
 File: constgraph.png Graphic file (type png)
 <use constgraph.png>
-Package pdftex.def Info: constgraph.png  used on input line 288.
+Package pdftex.def Info: constgraph.png  used on input line 320.
 (pdftex.def)             Requested size: 256.72147pt x 156.52019pt.
 
-Overfull \vbox (6.5788pt too high) detected at line 288
- []
-
-[27
-
-]
-<proofr1.png, id=269, 669.2503pt x 408.02437pt>
-File: proofr1.png Graphic file (type png)
-<use proofr1.png>
-Package pdftex.def Info: proofr1.png  used on input line 302.
-(pdftex.def)             Requested size: 256.72147pt x 156.52019pt.
-
-Overfull \vbox (6.5788pt too high) detected at line 302
- []
-
-[28
-
- <./proofr1.png>]
-<proofr2.png, id=278, 669.2503pt x 408.02437pt>
-File: proofr2.png Graphic file (type png)
-<use proofr2.png>
-Package pdftex.def Info: proofr2.png  used on input line 317.
-(pdftex.def)             Requested size: 256.72147pt x 156.52019pt.
-
-Overfull \vbox (6.5788pt too high) detected at line 317
- []
-
-[29
-
- <./proofr2.png>]
-<proofr3.png, id=287, 669.2503pt x 408.02437pt>
-File: proofr3.png Graphic file (type png)
-<use proofr3.png>
-Package pdftex.def Info: proofr3.png  used on input line 331.
-(pdftex.def)             Requested size: 256.72147pt x 156.52019pt.
-
-Overfull \vbox (6.5788pt too high) detected at line 331
+Overfull \vbox (6.5788pt too high) detected at line 320
  []
 
 [30
 
- <./proofr3.png>]
-<proofr4.png, id=296, 669.2503pt x 408.02437pt>
-File: proofr4.png Graphic file (type png)
-<use proofr4.png>
-Package pdftex.def Info: proofr4.png  used on input line 345.
+]
+<proofr1.png, id=337, 669.2503pt x 408.02437pt>
+File: proofr1.png Graphic file (type png)
+<use proofr1.png>
+Package pdftex.def Info: proofr1.png  used on input line 334.
 (pdftex.def)             Requested size: 256.72147pt x 156.52019pt.
 
-Overfull \vbox (6.5788pt too high) detected at line 345
+Overfull \vbox (6.5788pt too high) detected at line 334
  []
 
 [31
 
- <./proofr4.png>]
-<proofr5.png, id=306, 669.2503pt x 408.02437pt>
-File: proofr5.png Graphic file (type png)
-<use proofr5.png>
-Package pdftex.def Info: proofr5.png  used on input line 358.
+ <./proofr1.png>]
+<proofr2.png, id=347, 669.2503pt x 408.02437pt>
+File: proofr2.png Graphic file (type png)
+<use proofr2.png>
+Package pdftex.def Info: proofr2.png  used on input line 349.
 (pdftex.def)             Requested size: 256.72147pt x 156.52019pt.
 
-Overfull \vbox (21.07793pt too high) detected at line 358
+Overfull \vbox (6.5788pt too high) detected at line 349
  []
 
 [32
 
- <./proofr5.png>] [33
+ <./proofr2.png>]
+<proofr3.png, id=356, 669.2503pt x 408.02437pt>
+File: proofr3.png Graphic file (type png)
+<use proofr3.png>
+Package pdftex.def Info: proofr3.png  used on input line 363.
+(pdftex.def)             Requested size: 256.72147pt x 156.52019pt.
 
-]
-<zykg.png, id=322, 453.19313pt x 429.10312pt>
-File: zykg.png Graphic file (type png)
-<use zykg.png>
-Package pdftex.def Info: zykg.png  used on input line 385.
-(pdftex.def)             Requested size: 102.68962pt x 97.23152pt.
-<zyk.png, id=323, 453.19313pt x 454.69875pt>
-File: zyk.png Graphic file (type png)
-<use zyk.png>
-Package pdftex.def Info: zyk.png  used on input line 385.
-(pdftex.def)             Requested size: 102.68962pt x 103.0313pt.
- [34
-
- <./zykg.png> <./zyk.png>] [35
-
-] [36
-
-] [37
-
-] [38
-
-]
-<relatedwork.png, id=362, 197.23688pt x 149.8097pt>
-File: relatedwork.png Graphic file (type png)
-<use relatedwork.png>
-Package pdftex.def Info: relatedwork.png  used on input line 410.
-(pdftex.def)             Requested size: 222.48985pt x 168.99036pt.
-
-Overfull \vbox (4.24895pt too high) detected at line 410
+Overfull \vbox (6.5788pt too high) detected at line 363
  []
 
-[39
+[33
 
- <./relatedwork.png>]
-<container.jpg, id=371, 3777.11125pt x 2518.40875pt>
-File: container.jpg Graphic file (type jpg)
-<use container.jpg>
-Package pdftex.def Info: container.jpg  used on input line 420.
-(pdftex.def)             Requested size: 222.48985pt x 148.3312pt.
- [40
+ <./proofr3.png>]
+<proofr4.png, id=365, 669.2503pt x 408.02437pt>
+File: proofr4.png Graphic file (type png)
+<use proofr4.png>
+Package pdftex.def Info: proofr4.png  used on input line 377.
+(pdftex.def)             Requested size: 256.72147pt x 156.52019pt.
 
- <./container.jpg>] [41
+Overfull \vbox (6.5788pt too high) detected at line 377
+ []
+
+[34
+
+ <./proofr4.png>]
+<proofr5.png, id=374, 669.2503pt x 408.02437pt>
+File: proofr5.png Graphic file (type png)
+<use proofr5.png>
+Package pdftex.def Info: proofr5.png  used on input line 390.
+(pdftex.def)             Requested size: 256.72147pt x 156.52019pt.
+
+Overfull \vbox (21.07793pt too high) detected at line 390
+ []
+
+[35
+
+ <./proofr5.png>] [36
+
+]
+<zykg.png, id=390, 453.19313pt x 429.10312pt>
+File: zykg.png Graphic file (type png)
+<use zykg.png>
+Package pdftex.def Info: zykg.png  used on input line 417.
+(pdftex.def)             Requested size: 102.68962pt x 97.23152pt.
+<zyk.png, id=391, 453.19313pt x 454.69875pt>
+File: zyk.png Graphic file (type png)
+<use zyk.png>
+Package pdftex.def Info: zyk.png  used on input line 417.
+(pdftex.def)             Requested size: 102.68962pt x 103.0313pt.
+ [37
+
+ <./zykg.png> <./zyk.png>] [38
+
+] [39
+
+]
+<algo.png, id=417, 766.36313pt x 508.14844pt>
+File: algo.png Graphic file (type png)
+<use algo.png>
+Package pdftex.def Info: algo.png  used on input line 447.
+(pdftex.def)             Requested size: 342.2953pt x 226.96661pt.
+
+Overfull \vbox (5.89603pt too high) detected at line 447
+ []
+
+[40
+
+ <./algo.png>]
+<topexp.png, id=426, 947.79094pt x 491.58656pt>
+File: topexp.png Graphic file (type png)
+<use topexp.png>
+Package pdftex.def Info: topexp.png  used on input line 455.
+(pdftex.def)             Requested size: 342.2953pt x 177.5336pt.
+ [41
+
+ <./topexp.png>]
+<botexp.png, id=435, 924.45375pt x 475.02469pt>
+File: botexp.png Graphic file (type png)
+<use botexp.png>
+Package pdftex.def Info: botexp.png  used on input line 463.
+(pdftex.def)             Requested size: 342.2953pt x 175.88684pt.
+ [42
+
+ <./botexp.png>] [43
 
 ]
 \tf@nav=\write6
@@ -1513,13 +1544,13 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 25B719A4B25AA54F8D7512D7ED5476DE;914.
  ) 
 Here is how much of TeX's memory you used:
- 29096 strings out of 474485
- 586816 string characters out of 5743734
+ 29201 strings out of 474485
+ 587987 string characters out of 5743734
  1936542 words of memory out of 5000000
- 50731 multiletter control sequences out of 15000+600000
+ 50821 multiletter control sequences out of 15000+600000
  571117 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,123p,381b,573s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1538,9 +1569,9 @@ fb><C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 sfonts/cm/cmsy8.pfb><C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb><C:/Users/pggei/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/hoekwater/stmary10.pfb>
-Output written on main.pdf (41 pages, 6205372 bytes).
+Output written on main.pdf (43 pages, 6478115 bytes).
 PDF statistics:
- 461 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 530 PDF objects out of 1000 (max. 8388607)
+ 98 named destinations out of 1000 (max. 500000)
+ 322 words of extra memory for PDF output out of 10000 (max. 10000000)
 
