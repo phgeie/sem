@@ -11,6 +11,7 @@
 \usepackage{tikz}
 \usetikzlibrary {automata}
 \usepackage{stmaryrd}
+\usepackage{subfig}
 
 \usepackage{subcaption}
 
@@ -66,11 +67,28 @@
 	\begin{pointlist}
 		\item Menge an Farben $C=\{1,\dots c\}$ mit festem $c\in \mathbb{N}$
 		\item $c+1$ Tuben der Höhe $h_i\in\mathbb{N}$ in den Farben und eine farblos
-		\item Bis zu $h_i$ Bälle pro Farbe
+		\end{pointlist}
+		
+\begin{figure}[ht]
+		\includegraphics[width=.65\textwidth]{def0}
+		\caption{Definition}
+    \end{figure}
+		\end{frame}
+		
+		\begin{frame}{Definitionen}
+	\begin{pointlist}
+		\item Bis zu $h_i$ Bälle pro Farbe $i$
 		\item Konfiguration $S$ einer Tube ist eine Sequenz $(b_1,\dots,b_l)$ mit $l\leq h$
 		\item Tube-Rack $(T_0, T_1,\dots,T_c)$ hat Höhenprofil $H=(h_0,\dots,h_c)$ und Ersatztube $T_0$
 		\end{pointlist}
+		
+\begin{figure}[ht]
+		\includegraphics[width=.65\textwidth]{def}
+		\caption{Definition}
+    \end{figure}
 		\end{frame}
+		
+		
 \begin{frame}{Definitionen}
 	\begin{pointlist}
 		\item Konfiguration eines Tube-Racks ist $S=(S_0,\dots,S_c)$ mit $|S_i| \leq h_i$
@@ -95,7 +113,7 @@
 
 \begin{frame}{Lemma 1}
 \begin{enumlist}
-\item Falls die Anzahl der Bälle der Farbe $i$ $h$ entspricht für alle $1 \leq i \leq c$, hat $((h,\dots,h),S,c\cdot h\cdot (2h+1))$ eine Lösung, 
+\item Falls die Anzahl der $i$-farbigen Bälle $h$ entspricht für alle $1 \leq i \leq c$, hat $((h,\dots,h),S,c\cdot h\cdot (2h+1))$ eine Lösung, 
 \item Falls $(H,S,k)$ eine Lösung hat und $H' \geq H$ gilt, dann hat $(H',S,k)$ auch eine Lösung
 \item Falls $(H,S,k)$ mit $H=(\infty,\dots, \infty)$ eine Lösung hat, dann existiert eine Lösung mit: \begin{pointlist}
 \item Bälle in finaler Position werden nicht bewegt
@@ -128,56 +146,7 @@
 
 \begin{frame}{Konstruktion}
 \begin{figure}[ht]
-		\includegraphics[width=\textwidth]{construct01}
-		\caption{Konstruktion}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Konstruktion}
-\begin{figure}[ht]
-		\includegraphics[width=\textwidth]{construct02}
-		\caption{Konstruktion}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Konstruktion}
-\begin{figure}[ht]
-		\includegraphics[width=\textwidth]{construct03}
-		\caption{Konstruktion}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Konstruktion}
-\begin{figure}[ht]
-		\includegraphics[width=\textwidth]{construct04}
-		\caption{Konstruktion}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Konstruktion}
-\begin{figure}[ht]
-		\includegraphics[width=\textwidth]{construct05}
-		\caption{Konstruktion}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Konstruktion}
-\begin{figure}[ht]
-		\includegraphics[width=\textwidth]{construct06}
-		\caption{Konstruktion}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Konstruktion}
-\begin{figure}[ht]
-		\includegraphics[width=\textwidth]{construct07}
-		\caption{Konstruktion}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Konstruktion}
-\begin{figure}[ht]
-		\includegraphics[width=\textwidth]{construct08}
+		\includegraphics[width=\textwidth]{construct10}
 		\caption{Konstruktion}
     \end{figure}
 \end{frame}
@@ -191,7 +160,56 @@
 
 \begin{frame}{Konstruktion}
 \begin{figure}[ht]
-		\includegraphics[width=\textwidth]{construct10}
+		\includegraphics[width=\textwidth]{construct08}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct07}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct06}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct05}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct04}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct03}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct02}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Konstruktion}
+\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{construct01}
 		\caption{Konstruktion}
     \end{figure}
 \end{frame}
@@ -215,18 +233,128 @@
 \begin{frame}{Beweis (\glqq $\Rightarrow$\grqq)}
 \begin{pointlist}
 \item geg.: $(G,k)$ mit $G=(V,E)$
+\end{pointlist}
+
+	\begin{figure}[ht]
+		\includegraphics[width=.75\textwidth]{graph}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Beweis (\glqq $\Rightarrow$\grqq)}
+\begin{pointlist}
 \item Sei $E'\subseteq E$ mit $|E'| \leq k$ eine Lösung für FAS
+\end{pointlist}
+\begin{figure}[ht]
+		\includegraphics[width=.75\textwidth]{graphe}
+		\caption{Konstruktion}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Beweis (\glqq $\Rightarrow$\grqq)}
+\begin{pointlist}
 \item Sei $\pi:\{1,\dots,n\}\rightarrow \{1,\dots,n\}$ eine topologische Sortierung von $G'=(V, E\backslash E')$, sodass $\forall (u,v)\in E\backslash E': \pi(u)\leq \pi(v)$ 
+\end{pointlist}
+\begin{figure}
+    \centering
+    \subfloat[\centering]{{\includegraphics[width=0.48\textwidth]{graph} }}
+    \subfloat[\centering]{{\includegraphics[width=0.48\textwidth]{constgraph} }}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Beweis (\glqq $\Rightarrow$\grqq)}
+\begin{pointlist}
+\item $\pi(4)=1$, $\pi(2)=2$, $\pi(3)=3$, $\pi(1)=4$, $\pi(5)=5$
+\end{pointlist}
+\begin{figure}
+    \centering
+    \subfloat[\centering]{{\includegraphics[width=0.48\textwidth]{graphe} }}
+    \subfloat[\centering]{{\includegraphics[width=0.48\textwidth]{constgraph2} }}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Beweis (\glqq $\Rightarrow$\grqq)}
+\begin{pointlist}
 \item Für $i=1,\dots,n$:
 \begin{arrowlist}
-\item Bälle in $S_{\pi(i)}$, die einer Kante $(\pi(i),u)\in E\backslash E'$ entsprechen, gehen in Tube $S_u$
 \item Bälle in $S_{\pi(i)}$, die einer Kante aus $E'$ entsprechen, gehen in die Reserve-Tube 
+\item Bälle in $S_{\pi(i)}$, die einer Kante $(\pi(i),u)\in E\backslash E'$ entsprechen, gehen in Tube $S_u$
 \end{arrowlist}
+\end{pointlist}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{constgraph}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Beweis (\glqq $\Rightarrow$\grqq)}
+\begin{pointlist}
+\item Für $i=1,\dots,n$:
+\begin{arrowlist}
+\item Bälle in $S_{\pi(i)}$, die einer Kante aus $E'$ entsprechen, gehen in die Reserve-Tube 
+\item Bälle in $S_{\pi(i)}$, die einer Kante $(\pi(i),u)\in E\backslash E'$ entsprechen, gehen in Tube $S_u$
+\end{arrowlist}
+\end{pointlist}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{proofr1}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Beweis (\glqq $\Rightarrow$\grqq)}
+\begin{pointlist}
+\item Für $i=1,\dots,n$:
+\begin{arrowlist}
+\item Bälle in $S_{\pi(i)}$, die einer Kante aus $E'$ entsprechen, gehen in die Reserve-Tube 
+\item Bälle in $S_{\pi(i)}$, die einer Kante $(\pi(i),u)\in E\backslash E'$ entsprechen, gehen in Tube $S_u$
+\end{arrowlist}
+\end{pointlist}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{proofr2}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Beweis (\glqq $\Rightarrow$\grqq)}
+\begin{pointlist}
+\item Für $i=1,\dots,n$:
+\begin{arrowlist}
+\item Bälle in $S_{\pi(i)}$, die einer Kante aus $E'$ entsprechen, gehen in die Reserve-Tube 
+\item Bälle in $S_{\pi(i)}$, die einer Kante $(\pi(i),u)\in E\backslash E'$ entsprechen, gehen in Tube $S_u$
+\end{arrowlist}
+\end{pointlist}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{proofr3}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Beweis (\glqq $\Rightarrow$\grqq)}
+\begin{pointlist}
+\item Für $i=1,\dots,n$:
+\begin{arrowlist}
+\item Bälle in $S_{\pi(i)}$, die einer Kante aus $E'$ entsprechen, gehen in die Reserve-Tube 
+\item Bälle in $S_{\pi(i)}$, die einer Kante $(\pi(i),u)\in E\backslash E'$ entsprechen, gehen in Tube $S_u$
+\end{arrowlist}
+\end{pointlist}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{proofr4}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Beweis (\glqq $\Rightarrow$\grqq)}
+\begin{pointlist}
 \item Durch die topologische Sortierung ist die Tube $S_u$ die finale für den jeweiligen Ball, daher $k_1 = |E\backslash E'|$ viele Züge
-\item Die Bälle in der Reserve-Tube werden schließlich auf ihre Farben aufgeteilt, , daher $k_2 = 2\cdot |E'|$ viele Züge
+\item Die Bälle in der Reserve-Tube werden schließlich auf ihre Farben aufgeteilt, daher $k_2 = 2\cdot |E'|$ viele Züge
 \item $k_1 + k_2 =  |E\backslash E'| + 2\cdot |E'| = |E| + |E'| \leq |E| + k$
 \item Konstruierte Instanz $((\infty, \dots, \infty), (S_u)_{u=1}^n, |E|+k)$ hat eine Lösung
 \end{pointlist}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{proofr5}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Beweis (\glqq $\Leftarrow$\grqq)}
@@ -248,6 +376,12 @@
 \item $G'=(V,E\backslash E')$ ist azyklisch 
 \end{arrowlist}
 \end{pointlist}
+\begin{figure}
+    \centering
+    \subfloat[\centering]{{\includegraphics[width=0.3\textwidth]{zykg} }}
+    \qquad
+    \subfloat[\centering]{{\includegraphics[width=0.3\textwidth]{zyk} }}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Definition DFVS}
