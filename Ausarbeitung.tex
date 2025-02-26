@@ -30,8 +30,7 @@
 %%%%%%%%%%%%% Bitte nur ab hier Änderungen vornehmen %%%%%%%%%%%%%%%%%%%%%
 \title{Sorting Colored Balls in Colored Tubes \\ von Ernst Althaus et. al} % Geben Sie hier den Titel Ihrer Arbeit an.
 
-\author{Philipp Geier} % Geben Sie Ihren Namen an.
-\semester{WiSe 2024/25}
+\author{Philipp Geier} % Geben Sie Ihren Namen a\semester{WiSe 2024/25}
 \newcommand{\abgabedatum}{28. März 2025} % Hier wird das Abgabedatum angepasst
 \supervisors{% Geben Sie die Namen aller Betreuer ab, getrennt durch das Makro '\and'
 Jun.-Prof.\ Dr.\ Philipp Kindermann %\and
@@ -45,13 +44,9 @@ Jun.-Prof.\ Dr.\ Philipp Kindermann %\and
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setcounter{page}{1}
 \section{Einleitung}
-In dieser Ausarbeitung geht es um das Thema \glqq Sorting Colored Balls in Colored Tubes \grqq{} von Ernst Althaus et. al. 
-\subsection{Bedeutung}
-Im Folgenden werden mehrere Wörter und Prinzipien häufig vorkommen, sodass diese zuerst einmal zu erklären sind. Wir schauen uns ein rechteckiges Feld mit Tokens an. Dieses Feld ist in  ein Raster unterteilt und auf jedem Rasterstück kann maximal ein Token platziert werden. Die Position der Tokens kann beliebig aber passend zum Raster gewählt werden. Jede Platzierung nennen wir \textit{\textcolor{blue}{Konfiguration der Tokens}}.  Dabei beschreiben wir das kleinstmögliche Rechteck, das alle Tokens umfasst, als das \textit{\textcolor{blue}{Begrenzungsrechteck}}. Dieses hilft uns bei Verschiebungsoperationen. Diese Operationen sind \textit{\textcolor{blue}{\glqq linepush\grqq{}-Operationen}} in die vier Richtungen ($\Leftarrow, \Uparrow, \Rightarrow, \Downarrow$). 
-\\\\
-Betrachten wir uns zunächst einen $\Rightarrow$-linepush. Dieser schiebt die Tokens am linken Rand des Begrenzungsrechtecks um eine Einheit im Raster nach rechts. Dabei werden in diese Schieberichtung angrenzende Tokens auch eine Einheit nach rechts verschoben. Abbildung \ref{fig:1} zeigt diesen $\Rightarrow$-linepush. 
-\\\\
-Der linepush in die weiteren drei Richtungen wird analog jedoch in die jeweilige Richtung ausgeführt.\\
+In dieser Ausarbeitung geht es um das Thema \glqq Sorting Colored Balls in Colored Tubes\grqq{} von Ernst Althaus, Markus Blumenstock, Nick Johannes Peter Rassau, Felix Schuhknecht und Anton Quentin Zimdars. Ein Spiel aus der deutschen Fernsehserie \glqq Frag doch mal die Maus\grqq{} dient als dient als Inspiration für das Problem. Wir wollen jeden Ball in die Tube seiner Farbe sortieren, indem wir einen oberen Ball von einer Tube in eine andere legen, und dürfen dabei eine extra farblose Tube benutzen. Dieses Problem ist das \underline{S}orting \underline{C}olored \underline{B}alls into colored \underline{T}ubes Problem (SCBT).
+\subsection{Idee}
+Wir zeigen generelle Eigenschaften zur Berechenbarkeit und, dass das Problem, die Anzahl an Zügen zu minimieren, NP-schwer ist. Da das Spiel ohne Höhenbegrenzung dem \underline{F}eedback \underline{A}rc \underline{S}et Problem (FAS), konstruieren wir das SCBT Problem als Graphen und zeigen die Korrektheit dessen. Dadurch reduzieren wir das SCBT Problem auf das FAS Problem. Weil das FAS Problem NP-vollständig ist, ist somit auch 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.8\textwidth]{graph}
