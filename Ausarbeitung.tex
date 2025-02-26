@@ -28,11 +28,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% Bitte nur ab hier Änderungen vornehmen %%%%%%%%%%%%%%%%%%%%%
-\title{Pushing Blocks by Sweeping Lines} % Geben Sie hier den Titel Ihrer Arbeit an.
+\title{Sorting Colored Balls in Colored Tubes \\ von Ernst Althaus et. al} % Geben Sie hier den Titel Ihrer Arbeit an.
 
 \author{Philipp Geier} % Geben Sie Ihren Namen an.
-\semester{WiSe 2022/23}
-\newcommand{\abgabedatum}{14. April 2023} % Hier wird das Abgabedatum angepasst
+\semester{WiSe 2024/25}
+\newcommand{\abgabedatum}{28. März 2025} % Hier wird das Abgabedatum angepasst
 \supervisors{% Geben Sie die Namen aller Betreuer ab, getrennt durch das Makro '\and'
 Jun.-Prof.\ Dr.\ Philipp Kindermann %\and
 %Dr.\ Be TreuerInZwei \and
@@ -45,7 +45,7 @@ Jun.-Prof.\ Dr.\ Philipp Kindermann %\and
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setcounter{page}{1}
 \section{Einleitung}
-In dieser Ausarbeitung geht es um das Thema \glqq Pushing Blocks by Sweeping Lines \grqq{} von Hugo A. Akitaya, Maarten Löffler und Giovanni Viglietta. 
+In dieser Ausarbeitung geht es um das Thema \glqq Sorting Colored Balls in Colored Tubes \grqq{} von Ernst Althaus et. al. 
 \subsection{Bedeutung}
 Im Folgenden werden mehrere Wörter und Prinzipien häufig vorkommen, sodass diese zuerst einmal zu erklären sind. Wir schauen uns ein rechteckiges Feld mit Tokens an. Dieses Feld ist in  ein Raster unterteilt und auf jedem Rasterstück kann maximal ein Token platziert werden. Die Position der Tokens kann beliebig aber passend zum Raster gewählt werden. Jede Platzierung nennen wir \textit{\textcolor{blue}{Konfiguration der Tokens}}.  Dabei beschreiben wir das kleinstmögliche Rechteck, das alle Tokens umfasst, als das \textit{\textcolor{blue}{Begrenzungsrechteck}}. Dieses hilft uns bei Verschiebungsoperationen. Diese Operationen sind \textit{\textcolor{blue}{\glqq linepush\grqq{}-Operationen}} in die vier Richtungen ($\Leftarrow, \Uparrow, \Rightarrow, \Downarrow$). 
 \\\\
@@ -54,7 +54,7 @@ Betrachten wir uns zunächst einen $\Rightarrow$-linepush. Dieser schiebt die To
 Der linepush in die weiteren drei Richtungen wird analog jedoch in die jeweilige Richtung ausgeführt.\\
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.8\textwidth]{intro}
+	\includegraphics[width=0.8\textwidth]{graph}
 	\caption{$\Rightarrow$-linepushes}
 	\quelle\cite{akitaya2022pushing}
 	\label{fig:1}
@@ -68,7 +68,7 @@ Beispielsweise kommt das Konzept im Computer-Spiel \glqq 2048\grqq{} vor [Abb. \
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.25\textwidth]{2048}
+	\includegraphics[width=0.25\textwidth]{graph}
 	\caption{Spiel 2048}
 	\quelle\cite{2048}
 	\label{fig:2}
@@ -80,7 +80,7 @@ Auch in Geschicklichkeitsspielen wie \glqq Labyrinth\grqq{} [Abb. \ref{fig:lab}]
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.29\textwidth]{labyrinth}
+	\includegraphics[width=0.29\textwidth]{graph}
 	\caption{Geschicklichkeitsspiel Labyrinth}
 	\quelle\cite{labyrinth}
 	\label{fig:lab}
@@ -107,7 +107,7 @@ Eine Konfiguration heißt kanonisch, falls mehrere $\Rightarrow$-linepushes und 
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.25\textwidth]{kanonisch}
+	\includegraphics[width=0.25\textwidth]{graph}
 	\caption{Kanonische Konfiguration}
 	\quelle \cite{akitaya2022pushing}
 	\label{fig:3}
@@ -122,7 +122,7 @@ Eine Konfiguration heißt kompakt, falls ein beliebiger linepush durch einen ode
 \end{definition}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.25\textwidth]{kompakt}
+	\includegraphics[width=0.25\textwidth]{graph}
 	\caption{Kompakte Konfiguration}
 	\quelle \cite{akitaya2022pushing}
 	\label{fig:4}
@@ -133,10 +133,10 @@ Schauen wir uns beispielsweise ein $\Leftarrow$-linepush an [Abb. \ref{fig:kmpkt
 \begin{figure}[ht]
 	\centering
 	\begin{subfigure}{.4\textwidth}
-		\includegraphics[width=0.78\textwidth]{kmpkt_1}
+		\includegraphics[width=0.78\textwidth]{graph}
     \end{subfigure}%
     \begin{subfigure}{.4\textwidth}
-		\includegraphics[width=0.78\textwidth]{kmpkt_0}
+		\includegraphics[width=0.78\textwidth]{graph}
     \end{subfigure}
     \caption{$\Leftarrow$-linepush am Beispiel}
     \label{fig:kmpkt1}
@@ -147,10 +147,10 @@ Schauen wir uns beispielsweise ein $\Leftarrow$-linepush an [Abb. \ref{fig:kmpkt
 \begin{figure}[ht]
 	\centering
 	\begin{subfigure}{.4\textwidth}
-		\includegraphics[width=0.78\textwidth]{kmpkt_2}
+		\includegraphics[width=0.78\textwidth]{graph}
     \end{subfigure}%
     \begin{subfigure}{.4\textwidth}
-		\includegraphics[width=0.78\textwidth]{kmpkt_5}
+		\includegraphics[width=0.78\textwidth]{graph}
     \end{subfigure}
     \caption{Wiederherstellung der Ausgangsposition}
 	\label{fig:kmpkt2}
@@ -162,14 +162,14 @@ Zwei Konfigurationen heißen kompatibel, falls die Anzahl von Reihen gleicher L�
 \end{definition}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.5\textwidth]{q05}
+	\includegraphics[width=0.5\textwidth]{graph}
 	\caption{Kompatibilität von Reihen}
 	\quelle \cite{akitaya2022pushing}
 	\label{fig:5.1}
 \end{figure}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.5\textwidth]{q06}
+	\includegraphics[width=0.5\textwidth]{graph}
 	\caption{Kompatibilität von Spalten}
 	\quelle \cite{akitaya2022pushing}
 	\label{fig:5.2}
@@ -183,10 +183,10 @@ Wir betrachten uns in dieser Ausarbeitung unbeschriftete und beschriftete Puzzle
 \begin{figure}[ht]
 	\centering
 	\begin{subfigure}{.3\textwidth}
-		\includegraphics[width=0.75\textwidth]{Unlabeled}
+		\includegraphics[width=0.75\textwidth]{graph}
     \end{subfigure}%
     \begin{subfigure}{.3\textwidth}
-		\includegraphics[width=0.7\textwidth]{kompakt}
+		\includegraphics[width=0.7\textwidth]{graph}
     \end{subfigure}
     \caption{Unbeschriftete Konfigurationen}
 	\quelle \cite{akitaya2022pushing}
@@ -198,7 +198,7 @@ Wir betrachten uns in dieser Ausarbeitung unbeschriftete und beschriftete Puzzle
 Beschriftete Puzzle haben eine nicht einheitliche Beschriftung. Die Beschriftung kann über Farben, Zahlen und auch anderweitigen Symbolen erfolgen, solange es mindestens zwei unterschiedliche Beschriftungen sind. Tokens können die selbe Beschriftung zu einem anderen haben, aber werden dann als zueinander äquivalent angesehen. Dies bedeutet, dass die Tokens ohne die Konfiguration zu verändern ausgetauscht werden können. 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.23\textwidth]{labeled}
+	\includegraphics[width=0.23\textwidth]{graph}
 	\caption{Beschriftete Konfiguration}
 	\quelle \cite{akitaya2022pushing}
 	\label{fig:7}
@@ -214,7 +214,7 @@ Eine unbeschriftete Konfiguration heißt komprimierbar, falls ein linepush das B
 \end{definition}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.23\textwidth]{kompress}
+	\includegraphics[width=0.23\textwidth]{graph}
 	\caption{Komprimierbare Konfiguration}
 	\quelle \cite{akitaya2022pushing}
 	\label{fig:8}
@@ -228,7 +228,7 @@ Eine unbeschriftete Konfiguration heißt verteilt, falls in jeder Reihe und Spal
 \end{definition}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.23\textwidth]{Unlabeled}
+	\includegraphics[width=0.23\textwidth]{graph}
 	\caption{Verteilte Konfiguration}
 	\quelle \cite{akitaya2022pushing}
 	\label{fig:9}
@@ -245,15 +245,15 @@ Für jedes anderweitige $a$ und $b$ gibt es eine mögliche Startkonfiguration, b
 \begin{figure}[ht]
 	\centering
 	\begin{subfigure}{.3\textwidth}
-		\includegraphics[width=0.73\textwidth]{z00}
+		\includegraphics[width=0.73\textwidth]{graph}
 		\caption{Start}
     \end{subfigure}%
     \begin{subfigure}{.3\textwidth}
-		\includegraphics[width=0.65\textwidth]{z02}
+		\includegraphics[width=0.65\textwidth]{graph}
 		\caption{L-Form}
     \end{subfigure}%
     \begin{subfigure}{.3\textwidth}
-		\includegraphics[width=0.35\textwidth]{z03}
+		\includegraphics[width=0.35\textwidth]{graph}
 		\caption{Ende}
     \end{subfigure}%
     \caption{Ablauf für die doppelte diagonale Ausgangskonfiguration}
@@ -272,28 +272,28 @@ Solange die Konfiguration nicht kompakt ist, kann ein linepush das Begrenzungsre
 \begin{figure}
 	\centering
 	\begin{subfigure}{.5\textwidth}
-		\includegraphics[width=0.75\textwidth]{pic1_edited}
+		\includegraphics[width=0.75\textwidth]{graph}
     \end{subfigure}%
     \begin{subfigure}{.5\textwidth}
-		\includegraphics[width=0.75\textwidth]{pic2_edited}
+		\includegraphics[width=0.75\textwidth]{graph}
     \end{subfigure}
 \end{figure}
 \begin{figure}
 	\centering
 	\begin{subfigure}{.5\textwidth}
-		\includegraphics[width=0.75\textwidth]{pic3_edited}
+		\includegraphics[width=0.75\textwidth]{graph}
     \end{subfigure}%
     \begin{subfigure}{.5\textwidth}
-		\includegraphics[width=0.75\textwidth]{pic4_edited}
+		\includegraphics[width=0.75\textwidth]{graph}
     \end{subfigure}
 \end{figure}
 \begin{figure}
 	\centering
 	\begin{subfigure}{.5\textwidth}
-		\includegraphics[width=0.75\textwidth]{pic5_edited}
+		\includegraphics[width=0.75\textwidth]{graph}
     \end{subfigure}%
     \begin{subfigure}{.5\textwidth}
-		\includegraphics[width=0.75\textwidth]{pic6_edited}
+		\includegraphics[width=0.75\textwidth]{graph}
     \end{subfigure}
     \caption{Programm für das Verdichtungspuzzle}
 	\label{fig:6}
@@ -310,7 +310,7 @@ Eine beschriftete Konfiguration $K_1$ hat die selbe Form wie eine beschriftete K
 \end{definition}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.7\textwidth]{fun2022}
+	\includegraphics[width=0.7\textwidth]{graph}
 	\caption{Konfigurationen der selben Form}
 	\quelle \cite{akitaya2022pushing}
 	\label{fig:10}
@@ -325,7 +325,7 @@ Ein Dualpuzzle besteht aus einem Primärpuzzle mit einer kompakten Ausgangskonfi
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.5\textwidth]{dual}
+	\includegraphics[width=0.5\textwidth]{graph}
 	\caption{Primärpuzzle (links) / Dual (rechts)}
 	\quelle \cite{akitaya2022pushing}
 	\label{fig:11}
@@ -337,7 +337,7 @@ Bei einem Permutationspuzzle schauen wir uns Permutationen einer Ausgangskonfigu
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.29\textwidth]{b00}
+	\includegraphics[width=0.29\textwidth]{graph}
 	\caption{Konfiguration mit einem unbeweglichen zentralen Kern}
 	\quelle \cite{akitaya2022pushing}
 	\label{fig:12}
@@ -364,10 +364,10 @@ Alle möglichen Permutationen können mit folgenden Sequenzen erreicht werden. D
 \begin{figure}[ht]
 	\centering
 	\begin{subfigure}{.25\textwidth}
-		\includegraphics[width=0.75\textwidth]{m00}
+		\includegraphics[width=0.75\textwidth]{graph}
     \end{subfigure}%
     \begin{subfigure}{.25\textwidth}
-		\includegraphics[width=0.75\textwidth]{m08}
+		\includegraphics[width=0.75\textwidth]{graph}
     \end{subfigure}
     \caption{Typ-A $4$-Sequenz}
     \quelle \cite{akitaya2022pushing}
@@ -381,7 +381,7 @@ Das Begrenzungsrechteck ist gefüllt und linepushes verändern die Konfiguration
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.23\textwidth]{k00}
+	\includegraphics[width=0.23\textwidth]{graph}
 	\caption{Dichte Konfiguration}
 	\quelle\cite{akitaya2022pushing}
 	\label{fig:15}
@@ -392,7 +392,7 @@ Falls genau ein Feld frei ist, dann wird $G_C$ zyklisch über die nicht-Kern Tok
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.23\textwidth]{k15}
+	\includegraphics[width=0.23\textwidth]{graph}
 	\caption{zyklische Permutation}
 	\quelle\cite{akitaya2022pushing}
 	\label{fig:16}
@@ -409,28 +409,28 @@ Hier wird, wie beim Verdichtungspuzzle, ein Raster mit roten beschrifteten Token
 \begin{figure}[ht]
 	\centering
 	\begin{subfigure}{.4\textwidth}
-		\includegraphics[width=0.78\textwidth]{picPerm2_edited}
+		\includegraphics[width=0.78\textwidth]{graph}
     \end{subfigure}%
     \begin{subfigure}{.4\textwidth}
-		\includegraphics[width=0.78\textwidth]{picPerm1_edited}
+		\includegraphics[width=0.78\textwidth]{graph}
     \end{subfigure}
 \end{figure}
 \begin{figure}[ht]
 	\centering
 	\begin{subfigure}{.4\textwidth}
-		\includegraphics[width=0.78\textwidth]{picPerm3_edited}
+		\includegraphics[width=0.78\textwidth]{graph}
     \end{subfigure}%
     \begin{subfigure}{.4\textwidth}
-		\includegraphics[width=0.78\textwidth]{picPerm4_edited}
+		\includegraphics[width=0.78\textwidth]{graph}
     \end{subfigure}
 \end{figure}
 \begin{figure}[ht]
 	\centering
 	\begin{subfigure}{.4\textwidth}
-		\includegraphics[width=0.78\textwidth]{picPerm5_edited}
+		\includegraphics[width=0.78\textwidth]{graph}
     \end{subfigure}%
     \begin{subfigure}{.4\textwidth}
-		\includegraphics[width=0.78\textwidth]{picPerm6_edited}
+		\includegraphics[width=0.78\textwidth]{graph}
     \end{subfigure}
     \caption{Programm für das Permutationspuzzle}
 	\label{fig:14}
@@ -440,10 +440,10 @@ Hier wird, wie beim Verdichtungspuzzle, ein Raster mit roten beschrifteten Token
 \begin{figure}[ht]
 	\centering
 	\begin{subfigure}{.4\textwidth}
-		\includegraphics[width=0.9\textwidth]{picDual1_edited}
+		\includegraphics[width=0.9\textwidth]{graph}
     \end{subfigure}%
     \begin{subfigure}{.4\textwidth}
-		\includegraphics[width=0.9\textwidth]{picDual2_edited}
+		\includegraphics[width=0.9\textwidth]{graph}
     \end{subfigure}
     \caption{Programm für das Dualpuzzle}
 	\label{fig:6}

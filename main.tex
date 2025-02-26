@@ -13,8 +13,6 @@
 \usepackage{stmaryrd}
 \usepackage{subfig}
 
-\usepackage{subcaption}
-
 
 \author[Philipp Geier]{}
 \title[Sorting Colored Balls in Colored Tubes]{Sorting Colored Balls in Colored Tubes \\ von Ernst Althaus et. al}
@@ -121,7 +119,7 @@
 	\begin{pointlist}
 		\item Konfiguration eines Tube-Racks ist $S=(S_0,\dots,S_c)$ mit $|S_i| \leq h_i$
 		\item Zug $(i,j)$ heißt valide, falls $|S_i|\geq 1$ und $|S_j| < h_j$
-		\item Finale Konfiguration ist $S=(S_0,\dots, S_0)$ mit $S_0 = ()$ und $S_i =(i,\dots,i)$ für $1\leq i \leq c$
+		\item Finale Konfiguration ist $S=(S_0, S_i, \dots, S_i)$ mit $S_0 = ()$ und $S_i =(i,\dots,i)$ für $1\leq i \leq c$
 		\item $i$-farbiger Ball ist in finaler Position, falls er in Tube $i$ ist und alle Bälle darunter Farbe $i$ haben
 	\end{pointlist}
 \end{frame}
@@ -169,7 +167,7 @@
 \item $V=\{1,\dots,n\}$ und $G$ azyklisch mit $c=n$
 \begin{arrowlist}
 \item Eine Tube $S_u$ für jeden Knoten $u\in V$
-\item Ein Ball der Farbe $u$ in Tube $v$ Für jede Kante $(u,v)\in E$
+\item Ein Ball der Farbe $u$ in Tube $v$ für jede Kante $(u,v)\in E$
 \item konstruierte Instanz $((\infty, \dots, \infty), (S_u)_{u=1}^n, |E|+k)$
 \end{arrowlist}
 \end{pointlist}
@@ -315,7 +313,7 @@
 \end{pointlist}
 \begin{figure}
     \centering
-    \includegraphics[width=0.75\textwidth]{constgraph}
+    \includegraphics[width=0.65\textwidth]{constgraph}
 \end{figure}
 \end{frame}
 
@@ -329,7 +327,7 @@
 \end{pointlist}
 \begin{figure}
     \centering
-    \includegraphics[width=0.75\textwidth]{proofr1}
+    \includegraphics[width=0.65\textwidth]{proofr1}
 \end{figure}
 \end{frame}
 
@@ -344,7 +342,7 @@
 \end{pointlist}
 \begin{figure}
     \centering
-    \includegraphics[width=0.75\textwidth]{proofr2}
+    \includegraphics[width=0.65\textwidth]{proofr2}
 \end{figure}
 \end{frame}
 
@@ -358,7 +356,7 @@
 \end{pointlist}
 \begin{figure}
     \centering
-    \includegraphics[width=0.75\textwidth]{proofr3}
+    \includegraphics[width=0.65\textwidth]{proofr3}
 \end{figure}
 \end{frame}
 
@@ -372,7 +370,7 @@
 \end{pointlist}
 \begin{figure}
     \centering
-    \includegraphics[width=0.75\textwidth]{proofr4}
+    \includegraphics[width=0.65\textwidth]{proofr4}
 \end{figure}
 \end{frame}
 
@@ -385,7 +383,7 @@
 \end{pointlist}
 \begin{figure}
     \centering
-    \includegraphics[width=0.75\textwidth]{proofr5}
+    \includegraphics[width=0.65\textwidth]{proofr5}
 \end{figure}
 \end{frame}
 
