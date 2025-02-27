@@ -45,48 +45,11 @@ Jun.-Prof.\ Dr.\ Philipp Kindermann %\and
 \setcounter{page}{1}
 \section{Einleitung}
 In dieser Ausarbeitung geht es um das Thema \glqq Sorting Colored Balls in Colored Tubes\grqq{} von Ernst Althaus, Markus Blumenstock, Nick Johannes Peter Rassau, Felix Schuhknecht und Anton Quentin Zimdars. Ein Spiel aus der deutschen Fernsehserie \glqq Frag doch mal die Maus\grqq{} dient als dient als Inspiration für das Problem. Wir wollen jeden Ball in die Tube seiner Farbe sortieren, indem wir einen oberen Ball von einer Tube in eine andere legen, und dürfen dabei eine extra farblose Tube benutzen. Dieses Problem ist das \underline{S}orting \underline{C}olored \underline{B}alls into colored \underline{T}ubes Problem (SCBT).
+
 \subsection{Idee}
-Wir zeigen generelle Eigenschaften zur Berechenbarkeit und, dass das Problem, die Anzahl an Zügen zu minimieren, NP-schwer ist. Da das Spiel ohne Höhenbegrenzung dem \underline{F}eedback \underline{A}rc \underline{S}et Problem (FAS), konstruieren wir das SCBT Problem als Graphen und zeigen die Korrektheit dessen. Dadurch reduzieren wir das SCBT Problem auf das FAS Problem. Weil das FAS Problem NP-vollständig ist, ist somit auch 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.8\textwidth]{graph}
-	\caption{$\Rightarrow$-linepushes}
-	\quelle\cite{akitaya2022pushing}
-	\label{fig:1}
-\end{figure}
+Wir zeigen generelle Eigenschaften zur Berechenbarkeit und, dass das Problem, die Anzahl an Zügen zu minimieren, NP-vollständig ist. Da das Spiel ohne Höhenbegrenzung dem \underline{F}eedback \underline{A}rc \underline{S}et Problem (FAS), konstruieren wir das SCBT Problem als Graphen und zeigen die Korrektheit dessen. Dadurch reduzieren wir das SCBT Problem auf das FAS Problem. Weil das FAS Problem NP-vollständig ist, ist somit auch das SCBT Problem NP-vollständig.
 
-\newpage
-\subsection{Anwendung}
-Das Konzept vom Manipulieren von Objekten durch uniforme externe Kräfte kommt in mehrere Spielen vor.\\
-Beispielsweise kommt das Konzept im Computer-Spiel \glqq 2048\grqq{} vor [Abb. \ref{fig:2}]. Hier gibt es ein quadratisches Feld mit 16 Feldern, auf welchem Tokens drauf sein können. Zu Beginn sind 2 Tokens mit der Aufschrift \glqq 2\grqq{} zufällig auf dem Feld verteilt. Durch Schiebeoperationen verschiebt man alle Tokens in eine Richtung, sodass diese an den Rand oder an Tokens, welche den Rand berühren, angrenzen. Diese Operationen können wir uns als mehrere linepush-Operationen in eine Richtung vorstellen, also so lange einen linepush machen bis die Konfiguration sich nicht mehr verändert. Nach jeder Verschiebung kommt ein weiteres Token mit der Aufschrift \glqq 2\grqq{} oder \glqq 4\grqq{} hinzu. Das besondere an 2048 ist jedoch, dass Tokens mit der selben Nummer beim Verschieben zusammen kommen und die Nummern addiert werden. Gespielt wird bis eine Verschiebung die Konfiguration nicht verändern kann.
-
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.25\textwidth]{graph}
-	\caption{Spiel 2048}
-	\quelle\cite{2048}
-	\label{fig:2}
-\end{figure}
-
-\noindent
-Auch in Geschicklichkeitsspielen wie \glqq Labyrinth\grqq{} [Abb. \ref{fig:lab}] wird das Konzept vom Manipulieren von Objekten genutzt. In diesem Spiel ist die uniforme externe Kraft die Gravitation. Eine Kugel liegt in einem Labyrinth, welches über 2 Räder an den Seiten in unterschiedliche Richtungen geneigt werden kann. Durch die Kombination beider Räder sind nicht nur die Richtungen $\Leftarrow, \Uparrow, \Rightarrow, \Downarrow$ möglich, sondern auch diagonale Richtungen. Durch die Neigung des Feldes fängt die Kugel an zu rollen. Das Ziel des Spieles ist, die Kugel an das Ende des Labyrinths zu führen, ohne dass diese in ein Loch fällt.
-
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.29\textwidth]{graph}
-	\caption{Geschicklichkeitsspiel Labyrinth}
-	\quelle\cite{labyrinth}
-	\label{fig:lab}
-\end{figure}
-\newpage
-\noindent
-Zum anderen wird das Prinzip für den Selbstzusammenbau und in der robotischen Bewegungsplanung genutzt. Hier wird oftmals mit Teilchen im Micro- und Nanobereich gearbeitet, sodass eine individuelle Bewegung der Teilchen nicht vorstellbar ist. Will man die Teilchen nun bewegen, ist die Herangehensweise mit Hilfe von linepushes sinnvoller, da uniforme externe Kräfte wie ein linepush realisierbar sind.
-
-
-\section{Puzzle}
-Für den weiteren Verlauf der Ausarbeitung sind folgende Definitionen sehr wichtig und werden durchgängig benutzt.
+\section{Verwandte Arbeiten}
 
 \subsection{Äquivalenz}
 \begin{definition}

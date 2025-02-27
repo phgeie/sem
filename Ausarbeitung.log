@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.12.4)  26 FEB 2025 18:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.12.4)  27 FEB 2025 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1193,316 +1193,292 @@ i/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./figures/siegel
 <graph.png, id=15, 776.9025pt x 487.8225pt>
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 52.
-(pdftex.def)             Requested size: 334.60571pt x 210.10199pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 53.
+Package pdftex.def Info: graph.png  used on input line 68.
+(pdftex.def)             Requested size: 104.56389pt x 65.6522pt.
 
 
 LaTeX Warning: Citation 'akitaya2022pushing' on page 1 undefined on input line 
-54.
+70.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58 \newpage
-              [1{C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
-m/lm-mathsy.enc} <./graph.png>]
+l.75 
+      [1{C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mat
+hsy.enc} <./graph.png>]
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 66.
+Package pdftex.def Info: graph.png  used on input line 83.
 (pdftex.def)             Requested size: 104.56389pt x 65.6522pt.
 
 
-LaTeX Warning: Citation '2048' on page 2 undefined on input line 68.
+LaTeX Warning: Citation 'akitaya2022pushing' on page 2 undefined on input line 
+85.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
+
+ []
 
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 78.
-(pdftex.def)             Requested size: 121.29129pt x 76.15508pt.
-
-LaTeX Warning: Citation 'labyrinth' on page 2 undefined on input line 80.
-
-[2{C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
-c}]
+Package pdftex.def Info: graph.png  used on input line 94.
+(pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 105.
-(pdftex.def)             Requested size: 104.56389pt x 65.6522pt.
+Package pdftex.def Info: graph.png  used on input line 97.
+(pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 99.
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 108.
+(pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 111.
+(pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
+[2{C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 123.
+(pdftex.def)             Requested size: 209.12778pt x 131.31187pt.
 
 
 LaTeX Warning: Citation 'akitaya2022pushing' on page 3 undefined on input line 
-107.
+125.
 
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 120.
-(pdftex.def)             Requested size: 104.56389pt x 65.6522pt.
+Package pdftex.def Info: graph.png  used on input line 130.
+(pdftex.def)             Requested size: 209.12778pt x 131.31187pt.
 
 LaTeX Warning: Citation 'akitaya2022pushing' on page 3 undefined on input line 
-122.
+132.
+
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 144.
+(pdftex.def)             Requested size: 94.10844pt x 59.08699pt.
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 147.
+(pdftex.def)             Requested size: 87.83417pt x 55.14935pt.
+
+LaTeX Warning: Citation 'akitaya2022pushing' on page 3 undefined on input line 
+150.
+
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 159.
+(pdftex.def)             Requested size: 96.19698pt x 60.39706pt.
+
+LaTeX Warning: Citation 'akitaya2022pushing' on page 3 undefined on input line 
+161.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--127
+Underfull \hbox (badness 10000) in paragraph at lines 166--168
 
  []
 
 [3]
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 131.
-(pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 134.
-(pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 145.
-(pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 148.
-(pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
- [4{C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 160.
-(pdftex.def)             Requested size: 209.12778pt x 131.31187pt.
-
-
-LaTeX Warning: Citation 'akitaya2022pushing' on page 5 undefined on input line 
-162.
-
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 167.
-(pdftex.def)             Requested size: 209.12778pt x 131.31187pt.
-
-LaTeX Warning: Citation 'akitaya2022pushing' on page 5 undefined on input line 
-169.
-
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 181.
-(pdftex.def)             Requested size: 94.10844pt x 59.08699pt.
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 184.
-(pdftex.def)             Requested size: 87.83417pt x 55.14935pt.
-
-LaTeX Warning: Citation 'akitaya2022pushing' on page 5 undefined on input line 
-187.
-
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 196.
+Package pdftex.def Info: graph.png  used on input line 175.
 (pdftex.def)             Requested size: 96.19698pt x 60.39706pt.
 
-LaTeX Warning: Citation 'akitaya2022pushing' on page 5 undefined on input line 
-198.
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 203--205
-
- []
+LaTeX Warning: Citation 'akitaya2022pushing' on page 4 undefined on input line 
+177.
 
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 212.
+Package pdftex.def Info: graph.png  used on input line 189.
 (pdftex.def)             Requested size: 96.19698pt x 60.39706pt.
 
-LaTeX Warning: Citation 'akitaya2022pushing' on page 6 undefined on input line 
-214.
+LaTeX Warning: Citation 'akitaya2022pushing' on page 4 undefined on input line 
+191.
 
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 226.
-(pdftex.def)             Requested size: 96.19698pt x 60.39706pt.
-
-LaTeX Warning: Citation 'akitaya2022pushing' on page 6 undefined on input line 
-228.
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 234--239
+[4{C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
+c}]
+Underfull \hbox (badness 10000) in paragraph at lines 197--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--239
+Underfull \hbox (badness 10000) in paragraph at lines 197--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--239
+Underfull \hbox (badness 10000) in paragraph at lines 197--202
 
  []
 
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 243.
+Package pdftex.def Info: graph.png  used on input line 206.
 (pdftex.def)             Requested size: 91.59834pt x 57.50896pt.
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 247.
+Package pdftex.def Info: graph.png  used on input line 210.
 (pdftex.def)             Requested size: 81.55989pt x 51.2117pt.
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 251.
+Package pdftex.def Info: graph.png  used on input line 214.
 (pdftex.def)             Requested size: 43.91803pt x 27.57095pt.
 
+LaTeX Warning: Citation 'akitaya2022pushing' on page 5 undefined on input line 
+218.
+
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 233.
+(pdftex.def)             Requested size: 156.84583pt x 98.48576pt.
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 236.
+(pdftex.def)             Requested size: 156.84583pt x 98.48576pt.
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 242.
+(pdftex.def)             Requested size: 156.84583pt x 98.48576pt.
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 245.
+(pdftex.def)             Requested size: 156.84583pt x 98.48576pt.
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 251.
+(pdftex.def)             Requested size: 156.84583pt x 98.48576pt.
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 254.
+(pdftex.def)             Requested size: 156.84583pt x 98.48576pt.
+[5] [6]
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 271.
+(pdftex.def)             Requested size: 292.7776pt x 183.8411pt.
+
+
 LaTeX Warning: Citation 'akitaya2022pushing' on page 7 undefined on input line 
-255.
+273.
 
 [7]
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 270.
-(pdftex.def)             Requested size: 156.84583pt x 98.48576pt.
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 273.
-(pdftex.def)             Requested size: 156.84583pt x 98.48576pt.
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 279.
-(pdftex.def)             Requested size: 156.84583pt x 98.48576pt.
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 282.
-(pdftex.def)             Requested size: 156.84583pt x 98.48576pt.
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 288.
-(pdftex.def)             Requested size: 156.84583pt x 98.48576pt.
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 291.
-(pdftex.def)             Requested size: 156.84583pt x 98.48576pt.
- [8]
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 308.
-(pdftex.def)             Requested size: 292.7776pt x 183.8411pt.
-
-
-LaTeX Warning: Citation 'akitaya2022pushing' on page 9 undefined on input line 
-310.
-
-[9]
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 323.
+Package pdftex.def Info: graph.png  used on input line 286.
 (pdftex.def)             Requested size: 209.12778pt x 131.31187pt.
 
 
-LaTeX Warning: Citation 'akitaya2022pushing' on page 10 undefined on input line
- 325.
+LaTeX Warning: Citation 'akitaya2022pushing' on page 8 undefined on input line 
+288.
 
-[10]
+[8]
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 335.
+Package pdftex.def Info: graph.png  used on input line 298.
 (pdftex.def)             Requested size: 121.29129pt x 76.15508pt.
 
 
-LaTeX Warning: Citation 'akitaya2022pushing' on page 11 undefined on input line
- 337.
+LaTeX Warning: Citation 'akitaya2022pushing' on page 9 undefined on input line 
+300.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--349
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 344--349
+Underfull \hbox (badness 10000) in paragraph at lines 307--312
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--349
+Underfull \hbox (badness 10000) in paragraph at lines 307--312
 
  []
 
-[11]
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--312
+
+ []
+
+[9]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-54.
+17.
  (C:\Users\pggei\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 362.
+Package pdftex.def Info: graph.png  used on input line 325.
 (pdftex.def)             Requested size: 78.42291pt x 49.23915pt.
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 365.
+Package pdftex.def Info: graph.png  used on input line 328.
 (pdftex.def)             Requested size: 78.42291pt x 49.23915pt.
 
 
-LaTeX Warning: Citation 'akitaya2022pushing' on page 12 undefined on input line
- 368.
+LaTeX Warning: Citation 'akitaya2022pushing' on page 10 undefined on input line
+ 331.
 
-[12{C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}
+[10{C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 373--376
+Underfull \hbox (badness 10000) in paragraph at lines 336--339
 
  []
 
 File: graph.png Graphic file (type png)
 <use graph.png>
+Package pdftex.def Info: graph.png  used on input line 342.
+(pdftex.def)             Requested size: 96.19698pt x 60.39706pt.
+
+LaTeX Warning: Citation 'akitaya2022pushing' on page 11 undefined on input line
+ 344.
+
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 353.
+(pdftex.def)             Requested size: 96.19698pt x 60.39706pt.
+
+LaTeX Warning: Citation 'akitaya2022pushing' on page 11 undefined on input line
+ 355.
+
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 370.
+(pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
+File: graph.png Graphic file (type png)
+<use graph.png>
+Package pdftex.def Info: graph.png  used on input line 373.
+(pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
+File: graph.png Graphic file (type png)
+<use graph.png>
 Package pdftex.def Info: graph.png  used on input line 379.
-(pdftex.def)             Requested size: 96.19698pt x 60.39706pt.
-
-LaTeX Warning: Citation 'akitaya2022pushing' on page 13 undefined on input line
- 381.
-
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 390.
-(pdftex.def)             Requested size: 96.19698pt x 60.39706pt.
-
-LaTeX Warning: Citation 'akitaya2022pushing' on page 13 undefined on input line
- 392.
-
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 407.
 (pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 410.
+Package pdftex.def Info: graph.png  used on input line 382.
 (pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 416.
+Package pdftex.def Info: graph.png  used on input line 388.
 (pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 419.
+Package pdftex.def Info: graph.png  used on input line 391.
 (pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
+[11]
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 425.
-(pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 428.
-(pdftex.def)             Requested size: 130.49353pt x 81.93872pt.
-[13]
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 438.
+Package pdftex.def Info: graph.png  used on input line 401.
 (pdftex.def)             Requested size: 150.56866pt x 94.54068pt.
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 441.
+Package pdftex.def Info: graph.png  used on input line 404.
 (pdftex.def)             Requested size: 150.56866pt x 94.54068pt.
- [14] [15]
+ [12] [13]
 
-LaTeX Warning: Empty bibliography on input line 454.
+LaTeX Warning: Empty bibliography on input line 417.
 
 (Ausarbeitung.aux)
  ***********
@@ -1528,30 +1504,34 @@ Package logreq Info: Writing requests to 'Ausarbeitung.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27899 strings out of 474485
- 520337 string characters out of 5743734
- 1935542 words of memory out of 5000000
- 49746 multiletter control sequences out of 15000+600000
+ 27893 strings out of 474485
+ 520269 string characters out of 5743734
+ 1938542 words of memory out of 5000000
+ 49745 multiletter control sequences out of 15000+600000
  629872 words of font info for 89 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  122i,12n,121p,10954b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
-b><C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
-b><C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb
-><C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb
-><C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb>
-<C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><
-C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C
-:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/
-Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Us
-ers/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Us
-ers/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/
-Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/
-Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
-sbm10.pfb>
-Output written on Ausarbeitung.pdf (16 pages, 447181 bytes).
+
+pdfTeX warning (dest): name{figure.caption.26} has been referenced but does not
+ exist, replaced by a fixed one
+
+<C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb>
+<C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb>
+<C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><
+C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><
+C:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C
+:/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:
+/Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/
+Users/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Us
+ers/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/User
+s/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/User
+s/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Us
+ers/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Us
+ers/pggei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msb
+m10.pfb>
+Output written on Ausarbeitung.pdf (14 pages, 441337 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 75 named destinations out of 1000 (max. 500000)
- 203 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 306 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
+ 195 words of extra memory for PDF output out of 10000 (max. 10000000)
 
