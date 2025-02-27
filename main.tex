@@ -104,8 +104,8 @@
 		\begin{frame}{Definitionen}
 	\begin{pointlist}
 		\item Bis zu $h_i$ Bälle pro Farbe $i$
-		\item Konfiguration $S$ einer Tube ist eine Sequenz $(b_1,\dots,b_l)$ mit $l\leq h$
-		\item Tube-Rack $(T_0, T_1,\dots,T_c)$ hat Höhenprofil $H=(h_0,\dots,h_c)$ und Ersatztube $T_0$
+		\item Konfiguration $S_i$ einer Tube ist eine Sequenz $(b_1,\dots,b_l)$ mit $l\leq h_i$
+		\item Die farbigen Tuben $T_i$ und die Ersatztube $T_0$ bilden das Tube-Rack $(T_1,\dots,T_c, T_0)$ mit dem Höhenprofil $H=(h_1,\dots,h_c, h_0)$
 		\end{pointlist}
 		
 \begin{figure}[ht]
@@ -117,9 +117,9 @@
 		
 \begin{frame}{Definitionen}
 	\begin{pointlist}
-		\item Konfiguration eines Tube-Racks ist $S=(S_0,\dots,S_c)$ mit $|S_i| \leq h_i$
+		\item Konfiguration eines Tube-Racks ist $S=(S_1,\dots,S_c, S_0)$ mit $|S_i| \leq h_i$
 		\item Zug $(i,j)$ heißt valide, falls $|S_i|\geq 1$ und $|S_j| < h_j$
-		\item Finale Konfiguration ist $S=(S_0, S_i, \dots, S_i)$ mit $S_0 = ()$ und $S_i =(i,\dots,i)$ für $1\leq i \leq c$
+		\item Finale Konfiguration ist $S=(S_i, \dots, S_i, S_0)$ mit $S_0 = ()$ und $S_i =(i,\dots,i)$ für $1\leq i \leq c$
 		\item $i$-farbiger Ball ist in finaler Position, falls er in Tube $i$ ist und alle Bälle darunter Farbe $i$ haben
 	\end{pointlist}
 \end{frame}
@@ -132,6 +132,7 @@
 		\end{arrowlist}
 		\item Restricted SCBT-Problem (RSCBT):
 		\begin{arrowlist}
+ 			\item Instanz $(H,S,k)$ mit $k$ validen Zügen
  			\item Anzahl Bälle der Farbe $i$ gleich der Höhe $h\in\mathbb{N}$ mit dem Höhenprofil $H=(h,\dots,h)$
 		\end{arrowlist}
 	\end{pointlist}
@@ -146,7 +147,7 @@
 \item Bälle in finaler Position werden nicht bewegt
 \item Jeder andere wird 1- oder 2-mal bewegt
 \end{pointlist}
-\item Falls $((\infty, \dots,\infty),S,k)$ eine Lösung hat und $H=(\infty, h_1,\dots, h_c)$ mit $h_i \geq \max(|s_i|,b_i)$ gilt, dann hat $(H,S,k)$ eine Lösung
+\item Falls $((\infty, \dots,\infty),S,k)$ eine Lösung hat und $H=( h_1,\dots, h_c, \infty)$ mit $h_i \geq \max(|s_i|,b_i)$ gilt, dann hat $(H,S,k)$ eine Lösung
 \end{enumlist}
 \end{frame}
 
@@ -164,16 +165,15 @@
 \section*{Konstruktion}
 \begin{frame}{Konstruktion}
 \begin{pointlist}
-\item $V=\{1,\dots,n\}$ und $G$ azyklisch mit $c=n$
-\begin{arrowlist}
-\item Eine Tube $S_u$ für jeden Knoten $u\in V$
-\item Ein Ball der Farbe $u$ in Tube $v$ für jede Kante $(u,v)\in E$
-\item konstruierte Instanz $((\infty, \dots, \infty), (S_u)_{u=1}^n, |E|+k)$
-\end{arrowlist}
+\item Wir können aus jedem Graphen ein SCBT Problem machen
 \end{pointlist}
 \end{frame}
 
 \begin{frame}{Konstruktion}
+\begin{pointlist}
+\item $V=\{1,\dots,n\}$ mit $c=n$
+\item Eine Tube $S_u$ für jeden Knoten $u\in V$
+\end{pointlist}
 \begin{figure}[ht]
 		\includegraphics[width=\textwidth]{construct10}
 		\caption{Konstruktion}
@@ -181,6 +181,9 @@
 \end{frame}
 
 \begin{frame}{Konstruktion}
+\begin{pointlist}
+\item Ein Ball der Farbe $u$ in Tube $v$ für jede Kante $(u,v)\in E$
+\end{pointlist}
 \begin{figure}[ht]
 		\includegraphics[width=\textwidth]{construct09}
 		\caption{Konstruktion}
@@ -188,6 +191,9 @@
 \end{frame}
 
 \begin{frame}{Konstruktion}
+\begin{pointlist}
+\item Ein Ball der Farbe $u$ in Tube $v$ für jede Kante $(u,v)\in E$
+\end{pointlist}
 \begin{figure}[ht]
 		\includegraphics[width=\textwidth]{construct08}
 		\caption{Konstruktion}
@@ -195,6 +201,9 @@
 \end{frame}
 
 \begin{frame}{Konstruktion}
+\begin{pointlist}
+\item Ein Ball der Farbe $u$ in Tube $v$ für jede Kante $(u,v)\in E$
+\end{pointlist}
 \begin{figure}[ht]
 		\includegraphics[width=\textwidth]{construct07}
 		\caption{Konstruktion}
@@ -202,6 +211,9 @@
 \end{frame}
 
 \begin{frame}{Konstruktion}
+\begin{pointlist}
+\item Ein Ball der Farbe $u$ in Tube $v$ für jede Kante $(u,v)\in E$
+\end{pointlist}
 \begin{figure}[ht]
 		\includegraphics[width=\textwidth]{construct06}
 		\caption{Konstruktion}
@@ -209,6 +221,9 @@
 \end{frame}
 
 \begin{frame}{Konstruktion}
+\begin{pointlist}
+\item Ein Ball der Farbe $u$ in Tube $v$ für jede Kante $(u,v)\in E$
+\end{pointlist}
 \begin{figure}[ht]
 		\includegraphics[width=\textwidth]{construct05}
 		\caption{Konstruktion}
@@ -216,6 +231,9 @@
 \end{frame}
 
 \begin{frame}{Konstruktion}
+\begin{pointlist}
+\item Ein Ball der Farbe $u$ in Tube $v$ für jede Kante $(u,v)\in E$
+\end{pointlist}
 \begin{figure}[ht]
 		\includegraphics[width=\textwidth]{construct04}
 		\caption{Konstruktion}
@@ -223,6 +241,9 @@
 \end{frame}
 
 \begin{frame}{Konstruktion}
+\begin{pointlist}
+\item Ein Ball der Farbe $u$ in Tube $v$ für jede Kante $(u,v)\in E$
+\end{pointlist}
 \begin{figure}[ht]
 		\includegraphics[width=\textwidth]{construct03}
 		\caption{Konstruktion}
@@ -230,6 +251,9 @@
 \end{frame}
 
 \begin{frame}{Konstruktion}
+\begin{pointlist}
+\item Ein Ball der Farbe $u$ in Tube $v$ für jede Kante $(u,v)\in E$
+\end{pointlist}
 \begin{figure}[ht]
 		\includegraphics[width=\textwidth]{construct02}
 		\caption{Konstruktion}
@@ -237,6 +261,9 @@
 \end{frame}
 
 \begin{frame}{Konstruktion}
+\begin{pointlist}
+\item Ein Ball der Farbe $u$ in Tube $v$ für jede Kante $(u,v)\in E$
+\end{pointlist}
 \begin{figure}[ht]
 		\includegraphics[width=\textwidth]{construct01}
 		\caption{Konstruktion}
@@ -244,6 +271,9 @@
 \end{frame}
 
 \begin{frame}{Konstruktion}
+\begin{pointlist}
+\item konstruierte Instanz $((\infty, \dots, \infty), (S_u)_{u=1}^n, |E|+k)$
+\end{pointlist}
 \begin{figure}[ht]
 		\includegraphics[width=\textwidth]{construct}
 		\caption{Konstruktion}
@@ -412,6 +442,22 @@
     \qquad
     \subfloat[\centering]{{\includegraphics[width=0.3\textwidth]{zyk} }}
 \end{figure}
+\end{frame}
+
+\section*{RSCBT}
+\begin{frame}{Restricted SCBT (RSCBT)}
+\begin{pointlist}
+\item Das RSCBT Problem ist auch NP-vollständig
+\end{pointlist}
+\end{frame}
+
+\section*{Idee}
+\begin{frame}{Idee}
+\begin{pointlist}
+\item Um einen schnelleren Algorithmus zu bekommen, wollen wir eine untere Schranke bestimmen
+\item Damit müssen wir in der Breiten Suche die Konfigurationen nicht nummerieren, da wir wissen wie viele Züge minimal nötig sind
+\item Über ein Directed Feedback Vertex Set (DFVS) Solver berechnen wir eine untere Schranke
+\end{pointlist}
 \end{frame}
 
 \section*{DFVS}
